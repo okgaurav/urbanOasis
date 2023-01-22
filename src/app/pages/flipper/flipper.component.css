@@ -1,0 +1,27 @@
+
+.flipper {
+    perspective: 1000px; /* creates the 3D effect */
+  }
+  
+  .flipper .front, .flipper .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* hides the back of the card */
+    transition: transform .8s; /* adds a transition effect */
+  }
+  
+  .flipper .back {
+    transform: rotateY(180deg); /* rotates the back card by 180 degrees */
+  }
+  
+  /* adds a hover effect to flip the card */
+  .flipper:hover .front {
+    transform: rotateY(180deg);
+  }
+  
+  .flipper:hover .back {
+    transform: rotateY(0);
+  }
