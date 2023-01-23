@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material.module';
 import {PrimeModule} from './prime.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularFontAwesomeModule } from 'angular-font-awesome/dist';
 
 const modules = [
     CommonModule,
@@ -11,7 +12,8 @@ const modules = [
     PrimeModule,
     ReactiveFormsModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AngularFontAwesomeModule
 ];
 
 const components:any=[];
